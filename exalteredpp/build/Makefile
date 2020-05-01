@@ -1,4 +1,4 @@
-CPP = g++
+CPP = g++ -std=c++11 
 
 includes = -I thirdparty \
 	-I headers \
@@ -49,11 +49,11 @@ coreobj = $(coresrc:.cpp=.o)
 testobj = $(testsrc:.cpp=.o)
 
 test: $(testobj)
-	$(CPP) $(includes) -o $@ $^ $(LDFLAGS)
+	$(CPP) $(includes) -o $@ $^
 
 divinegames: $(coreobj)
-	$(CPP) -shared $(includes) -DCOMPILE_DLL -o divinegames-core.dll $^ $(LDFLAGS)
+	$(CPP) -shared $(includes) -DCOMPILE_DLL -o divinegames-core.dll $^ -Wl,--out-implib
 
 .PHONY: clean
 clean:
-	rm -f $(obj) test
+	rm -f $(coreobj)

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "dll_switch.h"
 #include <string>
 #include "../thirdparty/serialisable/serialisable.hpp"
 #include <social/persona.h>
@@ -18,7 +19,7 @@
 
 namespace character
 {
-  class character : public Serialisable
+  class dllapi character : public Serialisable
   {
     public:
       // constructors
