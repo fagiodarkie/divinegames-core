@@ -3,8 +3,6 @@
 #include "serialisation/json_constants.h"
 #include "errors/invalid_parameter.h"
 
-#include <QJsonArray>
-
 namespace character {
   namespace social {
 

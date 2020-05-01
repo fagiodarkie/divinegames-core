@@ -1,14 +1,12 @@
 #pragma once
 
-#include <QException>
+#include <exception>
 
 namespace exception {
-  class invalid_parameter : public QException
+  class invalid_parameter : public std::exception
   {
   public:
     const char* what() const noexcept (true) override;
-    void raise() const override;
-    invalid_parameter *clone() const override;
   };
 
 }

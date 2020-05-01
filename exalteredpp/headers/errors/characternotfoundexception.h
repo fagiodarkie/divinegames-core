@@ -1,14 +1,12 @@
 #pragma once
 
-#include <QException>
+#include <exception>
 
 namespace exception {
-  class character_not_found_exception : public QException
+  class character_not_found_exception : public std::exception
   {
   public:
     const char* what() const noexcept (true) override;
-    void raise() const override;
-    character_not_found_exception *clone() const override;
   };
 
 }

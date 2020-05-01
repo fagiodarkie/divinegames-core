@@ -1,8 +1,6 @@
 #include "../thirdparty/catch/catch.hpp"
 #include "virtues/virtue.h"
 
-#include <QJsonDocument>
-
 TEST_CASE("virtue")
 {
   SECTION("should create virtue with proper values")

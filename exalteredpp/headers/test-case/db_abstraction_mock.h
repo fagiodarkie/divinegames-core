@@ -1,10 +1,8 @@
 #pragma once
 
-#include <QSharedPointer>
 #include "character.h"
 #include "serialisation/db_abstraction.h"
 #include "characternotfoundexception.h"
-#include "qt-test/quick_chargen.h"
 
 #define CHAR_MAN_TEST_CHAR_NAME "name"
 

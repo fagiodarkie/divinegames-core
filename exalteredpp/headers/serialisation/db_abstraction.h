@@ -1,7 +1,7 @@
 #pragma once
 
 #include "character.h"
-#include <QSharedPointer>
+#include <memory>
 
 namespace serialisation {
 

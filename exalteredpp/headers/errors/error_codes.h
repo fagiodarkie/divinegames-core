@@ -1,7 +1,5 @@
 #pragma once
 
-#include <QString>
-
 namespace error_code {
 
   namespace runtime {

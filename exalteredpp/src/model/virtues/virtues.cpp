@@ -4,6 +4,8 @@
 #include "invalid_parameter.h"
 #include "json_constants.h"
 
+#include <algorithm>
+
 namespace virtues {
 
   virtues::virtues()

@@ -3,8 +3,6 @@
 #include "abilities/ability.h"
 #include "json_constants.h"
 
-#include <QJsonArray>
-
 #define TEST_ABILITY_NAME "test-ability"
 #define TEST_ABILITY_VALUE 1
 

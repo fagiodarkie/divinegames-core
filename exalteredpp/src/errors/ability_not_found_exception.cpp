@@ -6,14 +6,4 @@ namespace exception {
   {
     return error_code::character::ABILITY_NOT_FOUND;
   }
-
-  void ability_not_found_exception::raise() const
-  {
-    throw *this;
-  }
-
-  ability_not_found_exception* ability_not_found_exception::clone() const
-  {
-    return new ability_not_found_exception();
-  }
 }

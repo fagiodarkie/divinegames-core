@@ -1,6 +1,6 @@
 #include "../thirdparty/catch/catch.hpp"
+#include "test/quick-chargen.h"
 #include "worker/exalt_worker.h"
-#include "qt-test/quick_chargen.h"
 
 using calculator::worker::human_worker;
 using calculator::worker::exalt_worker;
