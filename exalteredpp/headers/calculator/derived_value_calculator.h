@@ -1,7 +1,5 @@
 #pragma once
 
-#define _GLIBCXX_USE_CXX11_ABI 1
-
 #include <map>
 #include "character.h"
 #include "worker/abstract_calculator_worker.h"

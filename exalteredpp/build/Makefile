@@ -9,7 +9,7 @@ includes = -I thirdparty \
 	-I headers/calculator
 
 %.o: %.cpp
-	$(CPP) $(includes) $(CPPFLAGS) -o $@ -c $<
+	$(CPP) -D COMPILE_DLL=1 $(includes) $(CPPFLAGS) -o $@ -c $<
 
 coresrc = $(wildcard src/calculator/*.cpp) \
 	$(wildcard src/calculator/cost_worker/*.cpp) \
@@ -52,8 +52,8 @@ test: $(testobj)
 	$(CPP) $(includes) -o $@ $^
 
 divinegames: $(coreobj)
-	$(CPP) -shared $(includes) -DCOMPILE_DLL -o divinegames-core.dll $^ -Wl,--out-implib
+	$(CPP) -shared $(includes) -o divinegames-core.dll $^ -Wl,--export-all-symbols,--out-implib,libdivinegames-core.a
 
 .PHONY: clean
 clean:
-	rm -f $(coreobj)
+	del /S *.o
