@@ -1,4 +1,4 @@
-CPP = g++ -std=c++11 
+CPP = g++ -m64 -std=c++11 
 
 includes = -I thirdparty \
 	-I headers \
