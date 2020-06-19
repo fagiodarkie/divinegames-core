@@ -1,4 +1,4 @@
-CPP = g++ -m64 -std=c++11 
+CPP = g++ -m64 -std=c++14 
 
 includes = -I thirdparty \
 	-I headers \
@@ -9,11 +9,13 @@ includes = -I thirdparty \
 	-I headers/calculator
 
 %.o: %.cpp
-	$(CPP) -D COMPILE_DLL=1 $(includes) $(CPPFLAGS) -o $@ -c $<
+	$(CPP) $(includes) $(CPPFLAGS) -o $@ -c $<
 
 coresrc = $(wildcard src/calculator/*.cpp) \
 	$(wildcard src/calculator/cost_worker/*.cpp) \
 	$(wildcard src/calculator/worker/*.cpp) \
+	$(wildcard src/equipment/*.cpp) \
+	$(wildcard src/equipment/craft/*.cpp) \
 	$(wildcard src/errors/*.cpp) \
 	$(wildcard src/model/*.cpp) \
 	$(wildcard src/model/abilities/*.cpp) \
