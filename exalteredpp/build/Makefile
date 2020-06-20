@@ -13,7 +13,9 @@ includes = -I thirdparty \
 
 coresrc = $(wildcard src/calculator/*.cpp) \
 	$(wildcard src/calculator/cost_worker/*.cpp) \
+	$(wildcard src/calculator/dice_roller/*.cpp) \
 	$(wildcard src/calculator/worker/*.cpp) \
+	$(wildcard src/combat/*.cpp) \
 	$(wildcard src/equipment/*.cpp) \
 	$(wildcard src/equipment/craft/*.cpp) \
 	$(wildcard src/errors/*.cpp) \
@@ -21,6 +23,8 @@ coresrc = $(wildcard src/calculator/*.cpp) \
 	$(wildcard src/model/abilities/*.cpp) \
 	$(wildcard src/model/attributes/*.cpp) \
 	$(wildcard src/model/character/*.cpp) \
+	$(wildcard src/model/character/creation/*.cpp) \
+	$(wildcard src/model/character/exalt/*.cpp) \
 	$(wildcard src/model/managers/*.cpp) \
 	$(wildcard src/model/narrative/*.cpp) \
 	$(wildcard src/model/power/*.cpp) \
