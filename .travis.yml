@@ -14,7 +14,7 @@ install:
 
 script:
   - cd core/build/
-  - export CSTD=g++1y
+  - export CSTD=c++1y
   - make -f Makefile test
   - chmod 777 test
   - ./test
