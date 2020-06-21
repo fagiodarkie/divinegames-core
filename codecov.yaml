@@ -1,6 +1,4 @@
 ignore:
-  - "exalteredpp/thirdparty"
-  - "exalteredpp/src/qt"
-  - "exalteredpp/src/qt-test"
-  - "exalteredpp/src/test-case"
-  - "exalteredpp/headers"
+  - "core/thirdparty"
+  - "core/src/test-case"
+  - "core/headers"
