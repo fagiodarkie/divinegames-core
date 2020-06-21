@@ -8,7 +8,7 @@ namespace equipment {
     material::material()
         : _category(material_category::METAL),
         _subcategory(submaterial_category::COMMON_METAL),
-        _hardness(hardness::HARD),
+        _hardness(hardness_enum::HARD),
         _craft_resistance(0), _cost(0), _availability(0), _tenaciousness(0), _break_point(0), _slots_taken(1), _minimum(0),
         _defense_bonus(0), _precision_bonus(0), _drill_bonus(0), _im_bonus(0), _changes_damage_type(false), _overridden_damage_type(combat::damage_type_enum::BASHING)
     {
@@ -62,12 +62,12 @@ namespace equipment {
         _subcategory = subcategory;
     }
     
-    enum hardness material::hardness() const
+    enum hardness_enum material::hardness() const
     {
         return _hardness;
     }
     
-    void material::set_hardness(const enum hardness &hardness)
+    void material::set_hardness(const enum hardness_enum &hardness)
     {
         _hardness = hardness;
     }
