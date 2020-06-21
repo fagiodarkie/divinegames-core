@@ -13,9 +13,9 @@ before_install:
 install:
 
 script:
-  - cd core/build/
+  - cd core
   - export CSTD=c++1y
-  - make -f Makefile test
+  - make -f build/Makefile test
   - chmod 777 test
   - ./test
   

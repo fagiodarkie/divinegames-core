@@ -9,6 +9,7 @@ includes = -I thirdparty \
 	-I headers/calculator
 
 %.o: %.cpp
+	echo $(CPP) $(includes) $(CPPFLAGS) -o $@ -c $<
 	$(CPP) $(includes) $(CPPFLAGS) -o $@ -c $<
 
 coresrc = $(wildcard src/calculator/*.cpp) \
@@ -55,6 +56,7 @@ coreobj = $(coresrc:.cpp=.o)
 testobj = $(testsrc:.cpp=.o)
 
 test: $(testobj)
+	echo $(testobj)
 	$(CPP) $(includes) -o $@ $(testobj)
 
 # declare OUTDLL to be equal to "-o divinegames-core.dll" to compile DLL as well
