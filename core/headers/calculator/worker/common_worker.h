@@ -47,10 +47,10 @@ namespace calculator {
       {
         mental_defenses result;
 
-        result.mental_dodge_vd =        std::max(0UL, compute_mental_dodge_dv(c) - c.stress());
-        result.charisma_parry_vd =      std::max(0UL, compute_mental_parry_dv(c, attribute::attribute_enum::CHARISMA) - c.stress());
-        result.manipulation_parry_vd =  std::max(0UL, compute_mental_parry_dv(c, attribute::attribute_enum::MANIPULATION) - c.stress());
-        result.appearance_parry_vd =    std::max(0UL, compute_mental_parry_dv(c, attribute::attribute_enum::APPEARANCE) - c.stress());
+        result.mental_dodge_vd =        std::max<long>(0L, compute_mental_dodge_dv(c) - c.stress());
+        result.charisma_parry_vd =      std::max<long>(0L, compute_mental_parry_dv(c, attribute::attribute_enum::CHARISMA) - c.stress());
+        result.manipulation_parry_vd =  std::max<long>(0L, compute_mental_parry_dv(c, attribute::attribute_enum::MANIPULATION) - c.stress());
+        result.appearance_parry_vd =    std::max<long>(0L, compute_mental_parry_dv(c, attribute::attribute_enum::APPEARANCE) - c.stress());
 
         return result;
       }
