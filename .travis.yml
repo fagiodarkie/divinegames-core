@@ -9,14 +9,13 @@ notifications:
     on_failure: change
 
 before_install:
-    sudo apt-get update -y
 
 install:
-    sudo apt-get install -y mingw-w64
 
 script:
   - cd core/build/
-  - mingw32-make -f Makefile test
+  - export CSTD=g++1y
+  - make -f Makefile test
   - chmod 777 test
   - ./test
   

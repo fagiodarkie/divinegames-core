@@ -1,4 +1,4 @@
-CPP = g++ -m64 -std=c++14 
+CPP = g++ -m64 -std=${CSTD}
 
 includes = -I thirdparty \
 	-I headers \
@@ -57,8 +57,10 @@ testobj = $(testsrc:.cpp=.o)
 test: $(testobj)
 	$(CPP) $(includes) -o $@ $^
 
+# declare OUTDLL to be equal to "-o divinegames-core.dll" to compile DLL as well
+
 divinegames: $(coreobj)
-	$(CPP) -shared $(includes) -o divinegames-core.dll $^ -Wl,--export-all-symbols,--out-implib,libdivinegames-core.a
+	$(CPP) -shared $(includes) ${OUTDLL} $^ -Wl,--export-all-symbols,--out-implib,libdivinegames-core.a
 
 .PHONY: clean
 clean:
