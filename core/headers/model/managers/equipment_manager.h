@@ -26,9 +26,9 @@ namespace manager {
     std::vector<craft::material> materials() const;
     std::vector<weapon> weapons() const;
 
-    craft::weapon_project project(const std::string& name) const;
-    craft::material material(const std::string& name) const;
-    weapon weapon(const std::string& name) const;
+    craft::weapon_project get_project(const std::string& name) const;
+    craft::material get_material(const std::string& name) const;
+    weapon get_weapon(const std::string& name) const;
 
     void add_material(const craft::material& m);
     void add_project(const craft::weapon_project& p);

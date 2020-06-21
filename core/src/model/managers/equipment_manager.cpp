@@ -64,17 +64,17 @@ namespace manager {
   }
 
 
-  craft::weapon_project equipment_manager::project(const std::string& name) const
+  craft::weapon_project equipment_manager::get_project(const std::string& name) const
   {
     return _projects.at(name);
   }
 
-  craft::material equipment_manager::material(const std::string& name) const
+  craft::material equipment_manager::get_material(const std::string& name) const
   {
     return _materials.at(name);
   }
 
-  weapon equipment_manager::weapon(const std::string& name) const
+  weapon equipment_manager::get_weapon(const std::string& name) const
   {
     return _weapons.at(name);
   }
