@@ -1,4 +1,4 @@
-CPP = g++ -m64 -std=${CSTD}
+CPP = g++ -m64 -std=${CSTD} --coverage -O0
 
 includes = -I thirdparty \
 	-I headers \
