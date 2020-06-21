@@ -55,7 +55,7 @@ coreobj = $(coresrc:.cpp=.o)
 testobj = $(testsrc:.cpp=.o)
 
 test: $(testobj)
-	$(CPP) $(includes) -o $@ $^
+	$(CPP) $(includes) -o $@ $(testobj)
 
 # declare OUTDLL to be equal to "-o divinegames-core.dll" to compile DLL as well
 
