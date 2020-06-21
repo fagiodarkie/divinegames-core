@@ -36,7 +36,7 @@ namespace equipment {
       MAGICAL_FIBER
     };
 
-    enum class hardness
+    enum class hardness_enum
     {
       SOFT,
       MEDIUM,
@@ -54,8 +54,8 @@ namespace equipment {
       submaterial_category subcategory() const;
       void set_subcategory(const submaterial_category &subcategory);
 
-      hardness hardness() const;
-      void set_hardness(const enum hardness &hardness);
+      hardness_enum hardness() const;
+      void set_hardness(const enum hardness_enum &hardness);
 
       std::string name() const;
       void set_name(const std::string &name);
@@ -110,7 +110,7 @@ namespace equipment {
     private:
       material_category _category;
       submaterial_category _subcategory;
-      enum hardness _hardness;
+      enum hardness_enum _hardness;
       std::string _name;
 
       unsigned short int _craft_resistance, _cost, _availability, _tenaciousness, _break_point, _slots_taken, _minimum;
