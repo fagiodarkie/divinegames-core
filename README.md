@@ -2,7 +2,7 @@
 
 ![travis badge](https://travis-ci.org/fagiodarkie/exaltered-plusplus.svg?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d22865588f5247489ed9a134c4400ed7)](https://app.codacy.com/app/fagiodarkie/exaltered-plusplus?utm_source=github.com&utm_medium=referral&utm_content=fagiodarkie/exaltered-plusplus&utm_campaign=Badge_Grade_Dashboard)
-[![BCH compliance](https://bettercodehub.com/edge/badge/fagiodarkie/exaltered-plusplus?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/fagiodarkie/divinegames-core?branch=master)](https://bettercodehub.com/)
 [![codecov](https://codecov.io/gh/fagiodarkie/exaltered-plusplus/branch/master/graph/badge.svg)](https://codecov.io/gh/fagiodarkie/exaltered-plusplus)
 
 C++ version of Exaltered, an interactive Character sheet for a heavily altered version of the White Wolf Publishing RPG Exalted (version 2.0).
