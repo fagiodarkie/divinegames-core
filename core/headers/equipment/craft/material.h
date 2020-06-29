@@ -22,6 +22,16 @@ namespace equipment {
       WIRE
     };
 
+    const static std::vector<material_category> MATERIAL_CATEGORIES
+    {
+      material_category::METAL,
+      material_category::WOOD,
+      material_category::NON_METAL,
+      material_category::FIBER,
+      material_category::LUXURY_MATERIAL,
+      material_category::WIRE
+    };
+
     const static std::map<material_category, std::string> NAME_OF_MATERIAL_CATEGORY
     {
       { material_category::METAL,           "Metal" },  
@@ -78,6 +88,13 @@ namespace equipment {
       SOFT,
       MEDIUM,
       HARD
+    };
+
+    const static std::vector<hardness_enum> TYPES_OF_HARDNESS
+    {
+      hardness_enum::SOFT,
+      hardness_enum::MEDIUM,
+      hardness_enum::HARD
     };
 
     const static std::map<hardness_enum, std::string> MATERIAL_HARDNESS_NAME
