@@ -18,7 +18,7 @@ namespace ability {
     _name = o._name;
     _value = o._value;
     _favourite = o._favourite;
-    //_specialisations = o._specialisations;
+    _specialisations = o._specialisations;
 
     return *this;
   }
@@ -98,7 +98,7 @@ namespace ability {
 
   void ability::operator-=(unsigned int new_value)
   {
-    _value += new_value;
+    _value -= new_value;
   }
 
   void ability::operator++()
