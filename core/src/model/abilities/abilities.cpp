@@ -6,7 +6,7 @@ namespace ability {
 
   void abilities::serialisation()
   {
-    synch(serialisation::json_constants::SLOT_ABILITIES, _abilities);
+    //synch(serialisation::json_constants::SLOT_ABILITIES, _abilities);
   }
 
   bool abilities::has(const ability_name &name) const
