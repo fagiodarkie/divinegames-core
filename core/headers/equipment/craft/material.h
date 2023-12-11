@@ -6,6 +6,8 @@
 #include "combat/attack_defines.h"
 #include <string>
 #include <map>
+#include <vector>
+#include <string>
 
 namespace equipment {
   namespace craft {
@@ -18,6 +20,26 @@ namespace equipment {
       FIBER,
       LUXURY_MATERIAL,
       WIRE
+    };
+
+    const static std::vector<material_category> MATERIAL_CATEGORIES
+    {
+      material_category::METAL,
+      material_category::WOOD,
+      material_category::NON_METAL,
+      material_category::FIBER,
+      material_category::LUXURY_MATERIAL,
+      material_category::WIRE
+    };
+
+    const static std::map<material_category, std::string> NAME_OF_MATERIAL_CATEGORY
+    {
+      { material_category::METAL,           "Metal" },  
+      { material_category::WOOD,            "Wood" },  
+      { material_category::NON_METAL,       "Non-Metal" },      
+      { material_category::FIBER,           "Fiber" },  
+      { material_category::LUXURY_MATERIAL, "Luxury material" },            
+      { material_category::WIRE,            "Wire" }
     };
 
     enum class submaterial_category
@@ -36,11 +58,50 @@ namespace equipment {
       MAGICAL_FIBER
     };
 
+    const static std::map<submaterial_category, std::string> NAME_OF_MATERIAL_SUBCATEGORY
+    {
+      { submaterial_category::COMMON_METAL,       "Common Metal" },
+      { submaterial_category::UNCOMMON_METAL,     "Uncommon Metal" },
+      { submaterial_category::MAGICAL_METAL,      "Magical Metal" },
+      { submaterial_category::MAGICAL_NON_METAL,  "Magical Non-Metal" },
+      { submaterial_category::UNCOMMON_COMPLEX,   "Uncommon Complex" },
+      { submaterial_category::VEGETAL_FIBER,      "Vegetal Fiber" },
+      { submaterial_category::ANIMAL_FIBER,       "Animal Fiber" },
+      { submaterial_category::CURED_ANIMAL_FIBER, "Cured Animal Fiber" },
+      { submaterial_category::FINE_HARD_WOOD,     "Fine Hard Wood" },
+      { submaterial_category::STRONG_HARD_WOOD,   "Strong Hard Wood" },
+      { submaterial_category::SOFT_WOOD,          "Soft Wood" },
+      { submaterial_category::MAGICAL_FIBER,      "Magical Fiber" }
+    };
+
+
+    const static std::map<material_category, std::vector<submaterial_category>> SUBCATEGORIES_OF_CATEGORY
+    {
+      { material_category::METAL, { submaterial_category::COMMON_METAL, submaterial_category::UNCOMMON_METAL, submaterial_category::MAGICAL_METAL } },
+      { material_category::WOOD, { submaterial_category::FINE_HARD_WOOD, submaterial_category::STRONG_HARD_WOOD, submaterial_category::SOFT_WOOD } },
+      { material_category::NON_METAL, { submaterial_category::MAGICAL_NON_METAL, submaterial_category::UNCOMMON_COMPLEX } },
+      { material_category::FIBER, { submaterial_category::VEGETAL_FIBER, submaterial_category::ANIMAL_FIBER, submaterial_category::CURED_ANIMAL_FIBER, submaterial_category::MAGICAL_FIBER } }
+    };
+
     enum class hardness_enum
     {
       SOFT,
       MEDIUM,
       HARD
+    };
+
+    const static std::vector<hardness_enum> TYPES_OF_HARDNESS
+    {
+      hardness_enum::SOFT,
+      hardness_enum::MEDIUM,
+      hardness_enum::HARD
+    };
+
+    const static std::map<hardness_enum, std::string> MATERIAL_HARDNESS_NAME
+    {
+      { hardness_enum::SOFT, "Soft" },
+      { hardness_enum::MEDIUM, "Medium" },
+      { hardness_enum::HARD, "Hard" }
     };
 
     class material : public Serialisable

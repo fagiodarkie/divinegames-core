@@ -1,19 +1,16 @@
 # Exaltered++
 
-![travis badge](https://travis-ci.org/fagiodarkie/exaltered-plusplus.svg?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d22865588f5247489ed9a134c4400ed7)](https://app.codacy.com/app/fagiodarkie/exaltered-plusplus?utm_source=github.com&utm_medium=referral&utm_content=fagiodarkie/exaltered-plusplus&utm_campaign=Badge_Grade_Dashboard)
-[![BCH compliance](https://bettercodehub.com/edge/badge/fagiodarkie/exaltered-plusplus?branch=master)](https://bettercodehub.com/)
-[![codecov](https://codecov.io/gh/fagiodarkie/exaltered-plusplus/branch/master/graph/badge.svg)](https://codecov.io/gh/fagiodarkie/exaltered-plusplus)
+[![Build Status](https://travis-ci.org/fagiodarkie/divinegames-core.svg?branch=master)](https://travis-ci.org/fagiodarkie/divinegames-core)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d22865588f5247489ed9a134c4400ed7)](https://app.codacy.com/app/fagiodarkie/exaltered-core?utm_source=github.com&utm_medium=referral&utm_content=fagiodarkie/exaltered-core&utm_campaign=Badge_Grade_Dashboard)
+[![BCH compliance](https://bettercodehub.com/edge/badge/fagiodarkie/divinegames-core?branch=master)](https://bettercodehub.com/)
+[![codecov](https://codecov.io/gh/fagiodarkie/divinegames-core/branch/master/graph/badge.svg)](https://codecov.io/gh/fagiodarkie/divinegames-core)
 
-C++ version of Exaltered, an interactive Character sheet for a heavily altered version of the White Wolf Publishing RPG Exalted (version 2.0).
+Core functionalities of Divine Games, a heavily altered version of the White Wolf Publishing RPG Exalted (version 2.0).
 
 ## Dependencies
-Exaltered++ is built with the `C++11` standard library.
+Exaltered++ is built with the `C++14` standard library.
 
 All dependencies aside the standard libraries are provided as single-include headers under the `thirdparty` folder. 
-
-### UI
-Exaltered++'s sleek dark theme is heavily based on the amazing [`DarkStyle`](https://github.com/Jorgen-VikingGod/Qt-Frameless-Window-DarkStyle) by Jorgen-VikingGod. Color touches were added for character customisation.
 
 ### Serialisation
 Exaltered++ models are serialised and deserialised using the [`serialisable`](https://github.com/Dugy/serialisable) library by Dugy.

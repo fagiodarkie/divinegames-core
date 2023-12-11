@@ -97,7 +97,9 @@ namespace equipment {
 
   unsigned short int weapon::drill(attack_type a_type) const
   {
-    return _project.drill(a_type) + material_bonus(sum_material_drill);
+    // we only apply drill bonuses from materials if the project itself has drill
+    short project_drill = _project.drill(a_type);
+    return project_drill ? project_drill + material_bonus(sum_material_drill) : 0;
   }
 
   float weapon::range(attack_type a_type) const
