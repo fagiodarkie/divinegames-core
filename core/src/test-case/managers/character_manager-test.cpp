@@ -2,9 +2,9 @@
 
 #include "errors/characternotfoundexception.h"
 #include "managers/character_manager.h"
-#include "db_abstraction_mock.h"
+#include "test-case/db_abstraction_mock.h"
 #include "calculator/worker/common_worker.h"
-#include "qt-test/quick_chargen.h"
+#include "test/quick-chargen.h"
 
 TEST_CASE("character_manager")
 {

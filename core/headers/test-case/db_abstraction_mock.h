@@ -3,6 +3,7 @@
 #include "character.h"
 #include "serialisation/db_abstraction.h"
 #include "characternotfoundexception.h"
+#include "test/quick-chargen.h"
 
 #define CHAR_MAN_TEST_CHAR_NAME "name"
 

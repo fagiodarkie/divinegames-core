@@ -6,6 +6,7 @@
 #include <list>
 #include <algorithm>
 #include <exception>
+#include <stdexcept>
 
 namespace commons {
   template<class T>

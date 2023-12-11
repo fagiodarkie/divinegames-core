@@ -38,6 +38,7 @@ testsrc = $(coresrc) \
 	$(wildcard src/test-case/calculator/cost_worker/*.cpp) \
 	$(wildcard src/test-case/calculator/worker/*.cpp) \
 	$(wildcard src/test-case/errors/*.cpp) \
+	$(wildcard src/test-case/managers/*.cpp) \
 	$(wildcard src/test-case/model/*.cpp) \
 	$(wildcard src/test-case/model/abilities/*.cpp) \
 	$(wildcard src/test-case/model/attributes/*.cpp) \
